@@ -3,14 +3,14 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
+    SECRET_KEY = os.environ.get('SECRET_KEY') or "OlTj3C_63Vqc_M5E-_FpS3l_BDLNFDRUh1"
 
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'udacitystoragesk'
     BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or '/hHNcgGZpxx3WHJpscSa2GBECOA6eN3bgWV5RprwaqFuD3jBjiS9SFNTlRr2PmuXRgeE1zmxfvErzk9ehIuh6g=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'udacitycontainersk'
 
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'udacity-server-sk.database.windows.net'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'ENTER_SQL_DB_NAME'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'udacity_db_sk'
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'udacity_admin_sk'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'UdaAdm@1234'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
